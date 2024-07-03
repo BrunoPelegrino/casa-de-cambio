@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #505050;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 20px; /* Adicionado para separar do result-container */
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 2em; /* Ajuste o tamanho da fonte conforme necessário */
+    color: #333; /* Cor padrão */
+}
+
+h1 span.casa-de {
+    color: #fff; /* Cor branca para "Casa de" */
+}
+
+h1 span.cambio {
+    color: #4CAF50; /* Cor verde para "câmbio" */
+}
+
+h4 {
+    margin: 10px 0;
+    color: #ccc;
+}
+
+input[type="text"], button {
+    width: calc(70% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: rgba(150, 235, 149, 1);
+    width: 150px;
+    font-weight: 700;
+    color: rgba(55, 55, 55, 1);
+    cursor: pointer;
+    size: 20px;
+    line-height: 26.24px;
+    font-family: 'Fira Code';
+}
+
+/* Pesquisar */
+
+
+
+
+#result-container {
+    
+    border-radius: 20px;
+    padding: 20px;
+    width: 90%;
+    max-width: 900px;
+    min-height: 50%;
+    max-height: 600px;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    justify-content: center;
+    align-items: start;
+    background-color:rgba(255, 255, 255, 0.06);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: contents;
+}
+
+ul li {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+ul li span.currency {
+    color: rgba(255, 255, 255, 1)
+}
+
+ul li span.rate {
+    color: rgb(170, 157, 43)
+}
+
+#result-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+#result-container::-webkit-scrollbar-track {
+    background: #f4f4f4;
+}
+
+#result-container::-webkit-scrollbar-thumb {
+    background-color: #ddd;
+    border-radius: 10px;
+    border: 2px solid #f4f4f4;
+}
+
+#result-container::-webkit-scrollbar-thumb:hover {
+    background-color: #ccc;
+}
+@media (max-width: 1000px) {
+    #result-container {
+        width: 100%;
+        height: auto;
+    }
+    .container {
+        max-width: 90%;
+    }
+}

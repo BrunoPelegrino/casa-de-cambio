@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Casa de câmbio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="container">
+        <h1><span class="casa-de">Casa de</span> <span class="cambio">câmbio</span></h1>
+        <h4>Digite a moeda:</h4>
+        <input id="coin-input" type="text" placeholder="USD">
+        <button id="search-btn">Pesquisar</button>
+    </div>
+    <div id="result-container">
+        <ul id="result"></ul>
+    </div>
     <script type="module" src="./src/main.js"></script>
 </body>
 </html>
